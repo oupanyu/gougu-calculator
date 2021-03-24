@@ -3,7 +3,7 @@
 int main() 
 {
 	int jisuan = 0;
-	printf("éœ€è¦å“ªä¸ªè®¡ç®—åŠŸèƒ½ï¼Ÿ\n1.ç›´è§’ä¸‰è§’å½¢è¾¹é•¿è®¡ç®—\n2.å¼€å‘ä¸­..\nè¯·é€‰æ‹©ï¼š");
+	printf("ĞèÒªÄÄ¸ö¼ÆËã¹¦ÄÜ£¿\n1.Ö±½ÇÈı½ÇĞÎ±ß³¤¼ÆËã\n2.¶à±ßĞÎ±ß³¤¼ÆËã\nÇëÑ¡Ôñ£º");
 	scanf("%d",&jisuan);
 	if (jisuan == 1)
 	{
@@ -11,9 +11,9 @@ int main()
 		double a = 0;
 		double b = 0;
 		double c = 0;
-		printf("ä½ æƒ³è®¡ç®—å“ªæ¡è¾¹é•¿ï¼Ÿ\n");
+		printf("ÄãÏë¼ÆËãÄÄÌõ±ß³¤£¿\n");
 		printf("   |\\    \n   | \\    \n1  |  \\ 3  \n   |   \\    \n   L____\\    \n    2        \n");
-		printf("è¾“å…¥éœ€è¦è®¡ç®—çš„è¾¹ï¼š");
+		printf("ÊäÈëĞèÒª¼ÆËãµÄ±ß£º");
 		scanf("%d",&h);
 		if (h == 1)
 		{
@@ -23,7 +23,7 @@ int main()
 			printf("   |   \\    \n");
 			printf("   L____\\    \n");
 			printf("     ??        \n");
-			printf("å†™å‡ºè¾¹2çš„é•¿:");
+			printf("Ğ´³ö±ß2µÄ³¤:");
 			scanf("%lf",&b);
 			printf("   |\\    \n");
 			printf("   | \\    \n");
@@ -31,11 +31,11 @@ int main()
 			printf("   |   \\    \n");
 			printf("   L____\\    \n");
 			printf("     %.2f         \n",b);
-			printf("å†™å‡ºè¾¹3çš„é•¿:");
+			printf("Ğ´³ö±ß3µÄ³¤:");
 			scanf("%lf",&c);
 			double f = (c*c)-(b*b);
 			double n = sqrt((double)f);
-			printf("\nAé•¿ä¸º%.2f\n\n",n);	
+			printf("\nA³¤Îª%.2f\n\n",n);	
 		}
 		else if (h == 2)
 		{
@@ -45,7 +45,7 @@ int main()
 			printf("   |   \\    \n");
 			printf("   L____\\    \n");
 			printf("     2         \n");
-			printf("å†™å‡ºè¾¹1çš„é•¿ï¼š");
+			printf("Ğ´³ö±ß1µÄ³¤£º");
 			scanf("%lf",&a);
 			printf("    |\\    \n");
 			printf("    | \\    \n");
@@ -53,11 +53,11 @@ int main()
 			printf("    |   \\    \n");
 			printf("    L____\\    \n");
 			printf("      2         \n");
-			printf("å†™å‡ºè¾¹3çš„é•¿ï¼š");
+			printf("Ğ´³ö±ß3µÄ³¤£º");
 			scanf("%lf",&c);
 			double f = (c*c)-(a*a);
 			double n = sqrt((double)f);
-			printf("\nè¾¹2é•¿ä¸º%.2f\n\n",n);	
+			printf("\n±ß2³¤Îª%.2f\n\n",n);	
 		}
 		else if (h == 3)
 		{
@@ -67,7 +67,7 @@ int main()
 			printf("   |   \\    \n");
 			printf("   L____\\    \n");
 			printf("     2        \n");
-			printf("å†™å‡ºè¾¹1çš„é•¿ï¼š");
+			printf("Ğ´³ö±ß1µÄ³¤£º");
 			scanf("%lf",&a);
 			printf("   |\\    \n");
 			printf("   | \\    \n");
@@ -75,16 +75,21 @@ int main()
 			printf("   |   \\    \n");
 			printf("   L____\\    \n");
 			printf("     ??        \n");
-			printf("å†™å‡ºè¾¹2çš„é•¿ï¼š");
+			printf("Ğ´³ö±ß2µÄ³¤£º");
 			scanf("%lf",&b);
 			double f = (a*a)+(b*b);
 			double n = sqrt((double)f);
-			printf("\nè¾¹3é•¿ä¸º%.2f\n\n",n);
+			printf("\n±ß3³¤Îª%.2f\n\n",n);
 		}
 	}
 	else if (jisuan == 2)
 	{
-		printf("ä¸éƒ½è¯´äº†å¼€å‘ä¸­å—\n");
+	int side = 0;
+	printf("ÊäÈë¶à±ßĞÎµÄ±ßÊı£º");
+	scanf("%d",&side);
+	int ang = 180*(side-2) ;
+	printf("Õâ¸ö%d",side);
+	printf("±ßĞÎµÄÄÚ½ÇºÍÎª%d¶È",ang);
 	}
 	return 0;
 }
